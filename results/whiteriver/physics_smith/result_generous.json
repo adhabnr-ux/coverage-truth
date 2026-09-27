@@ -1,0 +1,149 @@
+{
+  "area": "whiteriver",
+  "carrier": "Smith Bagley Inc",
+  "cells": 1302,
+  "strong_threshold_dbm": -60,
+  "sites_registered": 12,
+  "sites_inferred": 13,
+  "evaluated": 829,
+  "implausible": 0,
+  "pct_consistent": 100.0,
+  "implausible_median_site_km": null,
+  "registered_vs_inferred": [
+    {
+      "site": "ULS_KNKN208_0",
+      "nearest_inferred_km": 27.04
+    },
+    {
+      "site": "ULS_KNKN208_1",
+      "nearest_inferred_km": 36.1
+    },
+    {
+      "site": "ULS_KNKN208_2",
+      "nearest_inferred_km": 25.55
+    },
+    {
+      "site": "ULS_KNKN208_3",
+      "nearest_inferred_km": 33.77
+    },
+    {
+      "site": "ULS_KNKN208_4",
+      "nearest_inferred_km": 27.62
+    },
+    {
+      "site": "ULS_KNKN208_5",
+      "nearest_inferred_km": 36.79
+    },
+    {
+      "site": "ULS_KNKN208_6",
+      "nearest_inferred_km": 0.86
+    },
+    {
+      "site": "ULS_KNKN208_7",
+      "nearest_inferred_km": 11.91
+    },
+    {
+      "site": "ULS_KNKN208_8",
+      "nearest_inferred_km": 14.15
+    },
+    {
+      "site": "ULS_KNKN208_9",
+      "nearest_inferred_km": 0.37
+    },
+    {
+      "site": "ULS_KNKN208_10",
+      "nearest_inferred_km": 11.8
+    },
+    {
+      "site": "ULS_KNKN208_11",
+      "nearest_inferred_km": 33.11
+    }
+  ],
+  "config": {
+    "name": "whiteriver",
+    "bbox": [
+      33.7,
+      -110.1,
+      33.97,
+      -109.94
+    ],
+    "eval_margin_km": 0.0,
+    "dem_margin_deg": 0.25,
+    "freq_hz": 850000000.0,
+    "eirp_re_dbm": 33.0,
+    "tx_height_m": 30.0,
+    "rx_height_m": 1.5,
+    "margin_db": 6.0,
+    "fringe_dbm": -90.0,
+    "strong_min_cells": 40,
+    "peak_floor_dbm": -100.0,
+    "dbscan_eps_km": 1.0,
+    "dbscan_min_samples": 2,
+    "uls_licensees": [
+      "SBI License Corporation"
+    ],
+    "uls_radius_km": 40.0
+  },
+  "sensitivity": [
+    {
+      "eirp_re_dbm": 30.0,
+      "margin_db": 3,
+      "implausible": 0
+    },
+    {
+      "eirp_re_dbm": 30.0,
+      "margin_db": 6,
+      "implausible": 0
+    },
+    {
+      "eirp_re_dbm": 30.0,
+      "margin_db": 10,
+      "implausible": 0
+    },
+    {
+      "eirp_re_dbm": 33.0,
+      "margin_db": 3,
+      "implausible": 0
+    },
+    {
+      "eirp_re_dbm": 33.0,
+      "margin_db": 6,
+      "implausible": 0
+    },
+    {
+      "eirp_re_dbm": 33.0,
+      "margin_db": 10,
+      "implausible": 0
+    },
+    {
+      "eirp_re_dbm": 36.0,
+      "margin_db": 3,
+      "implausible": 0
+    },
+    {
+      "eirp_re_dbm": 36.0,
+      "margin_db": 6,
+      "implausible": 0
+    },
+    {
+      "eirp_re_dbm": 36.0,
+      "margin_db": 10,
+      "implausible": 0
+    },
+    {
+      "eirp_re_dbm": 39.0,
+      "margin_db": 3,
+      "implausible": 0
+    },
+    {
+      "eirp_re_dbm": 39.0,
+      "margin_db": 6,
+      "implausible": 0
+    },
+    {
+      "eirp_re_dbm": 39.0,
+      "margin_db": 10,
+      "implausible": 0
+    }
+  ]
+}

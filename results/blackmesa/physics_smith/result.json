@@ -1,0 +1,161 @@
+{
+  "area": "blackmesa",
+  "carrier": "Smith Bagley Inc",
+  "cells": 10983,
+  "strong_threshold_dbm": -60,
+  "sites_registered": 15,
+  "sites_inferred": 12,
+  "evaluated": 2346,
+  "implausible": 28,
+  "pct_consistent": 98.8,
+  "implausible_median_site_km": 39.4,
+  "registered_vs_inferred": [
+    {
+      "site": "ULS_KNKN208_0",
+      "nearest_inferred_km": 30.99
+    },
+    {
+      "site": "ULS_KNKN208_1",
+      "nearest_inferred_km": 2.1
+    },
+    {
+      "site": "ULS_KNKN208_2",
+      "nearest_inferred_km": 20.42
+    },
+    {
+      "site": "ULS_KNKN208_3",
+      "nearest_inferred_km": 16.27
+    },
+    {
+      "site": "ULS_KNKN208_4",
+      "nearest_inferred_km": 17.33
+    },
+    {
+      "site": "ULS_KNKN208_5",
+      "nearest_inferred_km": 0.79
+    },
+    {
+      "site": "ULS_KNKN208_6",
+      "nearest_inferred_km": 0.26
+    },
+    {
+      "site": "ULS_KNKN208_7",
+      "nearest_inferred_km": 35.48
+    },
+    {
+      "site": "ULS_KNKN208_8",
+      "nearest_inferred_km": 38.94
+    },
+    {
+      "site": "ULS_KNKN208_9",
+      "nearest_inferred_km": 41.35
+    },
+    {
+      "site": "ULS_KNKN208_10",
+      "nearest_inferred_km": 17.83
+    },
+    {
+      "site": "ULS_KNKN208_11",
+      "nearest_inferred_km": 27.2
+    },
+    {
+      "site": "ULS_KNKN208_12",
+      "nearest_inferred_km": 36.66
+    },
+    {
+      "site": "ULS_KNKN208_13",
+      "nearest_inferred_km": 34.52
+    },
+    {
+      "site": "ULS_KNKN208_14",
+      "nearest_inferred_km": 36.41
+    }
+  ],
+  "config": {
+    "name": "blackmesa",
+    "bbox": [
+      36.05,
+      -110.45,
+      36.55,
+      -109.8
+    ],
+    "eval_margin_km": 8.0,
+    "dem_margin_deg": 0.25,
+    "freq_hz": 850000000.0,
+    "eirp_re_dbm": 33.0,
+    "tx_height_m": 30.0,
+    "rx_height_m": 1.5,
+    "margin_db": 6.0,
+    "fringe_dbm": -90.0,
+    "strong_min_cells": 40,
+    "peak_floor_dbm": -80.0,
+    "dbscan_eps_km": 1.0,
+    "dbscan_min_samples": 2,
+    "uls_licensees": [
+      "SBI License Corporation"
+    ],
+    "uls_radius_km": 40.0
+  },
+  "sensitivity": [
+    {
+      "eirp_re_dbm": 30.0,
+      "margin_db": 3,
+      "implausible": 110
+    },
+    {
+      "eirp_re_dbm": 30.0,
+      "margin_db": 6,
+      "implausible": 60
+    },
+    {
+      "eirp_re_dbm": 30.0,
+      "margin_db": 10,
+      "implausible": 20
+    },
+    {
+      "eirp_re_dbm": 33.0,
+      "margin_db": 3,
+      "implausible": 60
+    },
+    {
+      "eirp_re_dbm": 33.0,
+      "margin_db": 6,
+      "implausible": 28
+    },
+    {
+      "eirp_re_dbm": 33.0,
+      "margin_db": 10,
+      "implausible": 4
+    },
+    {
+      "eirp_re_dbm": 36.0,
+      "margin_db": 3,
+      "implausible": 28
+    },
+    {
+      "eirp_re_dbm": 36.0,
+      "margin_db": 6,
+      "implausible": 7
+    },
+    {
+      "eirp_re_dbm": 36.0,
+      "margin_db": 10,
+      "implausible": 2
+    },
+    {
+      "eirp_re_dbm": 39.0,
+      "margin_db": 3,
+      "implausible": 7
+    },
+    {
+      "eirp_re_dbm": 39.0,
+      "margin_db": 6,
+      "implausible": 2
+    },
+    {
+      "eirp_re_dbm": 39.0,
+      "margin_db": 10,
+      "implausible": 0
+    }
+  ]
+}

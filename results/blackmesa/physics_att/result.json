@@ -1,0 +1,100 @@
+{
+  "area": "blackmesa",
+  "carrier": "AT&T",
+  "cells": 16845,
+  "strong_threshold_dbm": -80,
+  "sites_registered": 0,
+  "sites_inferred": 8,
+  "evaluated": 5615,
+  "implausible": 253,
+  "pct_consistent": 95.5,
+  "implausible_median_site_km": 21.3,
+  "registered_vs_inferred": [],
+  "config": {
+    "name": "blackmesa",
+    "bbox": [
+      36.05,
+      -110.45,
+      36.55,
+      -109.8
+    ],
+    "eval_margin_km": 8.0,
+    "dem_margin_deg": 0.25,
+    "freq_hz": 739000000.0,
+    "eirp_re_dbm": 33.0,
+    "tx_height_m": 30.0,
+    "rx_height_m": 1.5,
+    "margin_db": 6.0,
+    "fringe_dbm": -90.0,
+    "strong_min_cells": 40,
+    "peak_floor_dbm": -80.0,
+    "dbscan_eps_km": 1.0,
+    "dbscan_min_samples": 2,
+    "uls_licensees": [
+      "AT&T Mobility Spectrum, LLC"
+    ],
+    "uls_radius_km": 40.0
+  },
+  "sensitivity": [
+    {
+      "eirp_re_dbm": 30.0,
+      "margin_db": 3,
+      "implausible": 487
+    },
+    {
+      "eirp_re_dbm": 30.0,
+      "margin_db": 6,
+      "implausible": 336
+    },
+    {
+      "eirp_re_dbm": 30.0,
+      "margin_db": 10,
+      "implausible": 236
+    },
+    {
+      "eirp_re_dbm": 33.0,
+      "margin_db": 3,
+      "implausible": 336
+    },
+    {
+      "eirp_re_dbm": 33.0,
+      "margin_db": 6,
+      "implausible": 253
+    },
+    {
+      "eirp_re_dbm": 33.0,
+      "margin_db": 10,
+      "implausible": 190
+    },
+    {
+      "eirp_re_dbm": 36.0,
+      "margin_db": 3,
+      "implausible": 253
+    },
+    {
+      "eirp_re_dbm": 36.0,
+      "margin_db": 6,
+      "implausible": 207
+    },
+    {
+      "eirp_re_dbm": 36.0,
+      "margin_db": 10,
+      "implausible": 126
+    },
+    {
+      "eirp_re_dbm": 39.0,
+      "margin_db": 3,
+      "implausible": 207
+    },
+    {
+      "eirp_re_dbm": 39.0,
+      "margin_db": 6,
+      "implausible": 148
+    },
+    {
+      "eirp_re_dbm": 39.0,
+      "margin_db": 10,
+      "implausible": 56
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "area": "blackmesa",
+  "carrier": "Verizon",
+  "cells": 21686,
+  "strong_threshold_dbm": -60,
+  "sites_registered": 0,
+  "sites_inferred": 85,
+  "evaluated": 7616,
+  "implausible": 0,
+  "pct_consistent": 100.0,
+  "implausible_median_site_km": null,
+  "registered_vs_inferred": [],
+  "config": {
+    "name": "blackmesa",
+    "bbox": [
+      36.05,
+      -110.45,
+      36.55,
+      -109.8
+    ],
+    "eval_margin_km": 8.0,
+    "dem_margin_deg": 0.25,
+    "freq_hz": 751000000.0,
+    "eirp_re_dbm": 33.0,
+    "tx_height_m": 30.0,
+    "rx_height_m": 1.5,
+    "margin_db": 6.0,
+    "fringe_dbm": -90.0,
+    "strong_min_cells": 40,
+    "peak_floor_dbm": -100.0,
+    "dbscan_eps_km": 1.0,
+    "dbscan_min_samples": 2,
+    "uls_licensees": [
+      "Cellco Partnership"
+    ],
+    "uls_radius_km": 40.0
+  },
+  "sensitivity": [
+    {
+      "eirp_re_dbm": 30.0,
+      "margin_db": 3,
+      "implausible": 73
+    },
+    {
+      "eirp_re_dbm": 30.0,
+      "margin_db": 6,
+      "implausible": 10
+    },
+    {
+      "eirp_re_dbm": 30.0,
+      "margin_db": 10,
+      "implausible": 0
+    },
+    {
+      "eirp_re_dbm": 33.0,
+      "margin_db": 3,
+      "implausible": 10
+    },
+    {
+      "eirp_re_dbm": 33.0,
+      "margin_db": 6,
+      "implausible": 0
+    },
+    {
+      "eirp_re_dbm": 33.0,
+      "margin_db": 10,
+      "implausible": 0
+    },
+    {
+      "eirp_re_dbm": 36.0,
+      "margin_db": 3,
+      "implausible": 0
+    },
+    {
+      "eirp_re_dbm": 36.0,
+      "margin_db": 6,
+      "implausible": 0
+    },
+    {
+      "eirp_re_dbm": 36.0,
+      "margin_db": 10,
+      "implausible": 0
+    },
+    {
+      "eirp_re_dbm": 39.0,
+      "margin_db": 3,
+      "implausible": 0
+    },
+    {
+      "eirp_re_dbm": 39.0,
+      "margin_db": 6,
+      "implausible": 0
+    },
+    {
+      "eirp_re_dbm": 39.0,
+      "margin_db": 10,
+      "implausible": 0
+    }
+  ]
+}
