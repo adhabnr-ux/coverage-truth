@@ -1,0 +1,50 @@
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Coverage Truth · FCC 4G LTE claims, Dec 2025 map · Ookla tests Jul 2025 – Jun 2026</div>
+    <h1>Can anyone check the map at your school?</h1>
+    <p class="lede" id="lede"></p>
+    <p class="byline">Built by Sahi (NVIDIA 6G Developer Program), with Claude. Open data, open code: <a href="https://github.com/adhabnr-ux/coverage-truth">github.com/adhabnr-ux/coverage-truth</a></p>
+  </header>
+
+  <div class="compare" id="compare"></div>
+  <ul class="legend" id="legend"></ul>
+
+  <div class="tool">
+    <div class="mapbox">
+      <svg id="map" role="img" aria-label="Map of Arizona public schools colored by whether the FCC 4G claim has been checked by speed tests"></svg>
+      <div class="mapnote"><span><span class="dot" style="background:var(--tribal);border:1px solid var(--tribal-line)"></span> Tribal lands (Census 2023)</span><span>Click a dot, or search</span></div>
+    </div>
+    <div class="controls">
+      <div class="search">
+        <label class="eyebrow" for="q">Find a school</label>
+        <input id="q" type="search" autocomplete="off" placeholder="School or town, e.g. Black Mesa, Kayenta, Tempe">
+        <ul class="results" id="results" hidden></ul>
+      </div>
+      <div>
+        <div class="eyebrow" style="margin-bottom:6px">Show on map</div>
+        <div class="chips" id="chips"></div>
+      </div>
+      <article class="card" id="card" aria-live="polite"></article>
+    </div>
+  </div>
+
+  <section class="block">
+    <h2>Schools no one can check</h2>
+    <p style="max-width:70ch;color:var(--ink-2);margin-top:0">Carriers tell the FCC these schools have 4G, but in twelve months not one Ookla speed test was recorded within 2&nbsp;km. Nothing in public crowdsourced data can confirm or contradict the claim.</p>
+    <div class="tablewrap"><table class="list" id="nolist"></table></div>
+  </section>
+
+  <section class="block">
+    <h2>How to read this</h2>
+    <div class="method">
+      <div><h3>The claim</h3><p>FCC Broadband Data Collection, 4G LTE, all carriers, map of Dec 31 2025 (released Sept 2026). A school counts as claimed if its H3 hexagon (about 0.1 km²) is claimed at the 5/1 Mbps standard.</p></div>
+      <div><h3>The evidence</h3><p>Ookla open speed tests from Jul 2025 to Jun 2026, pooled across four quarters, within 2 km of the school. "Checked" means 10 or more tests. "Thin" means 1 to 9. "No one checked" means zero. Where 10 or more tests exist, every school averages above 5 Mbps download.</p></div>
+      <div><h3>The physics</h3><p>Around Black Mesa and Whiteriver, each carrier's weak-signal claims were tested against 30 m terrain with an ITU-R P.526 diffraction model, cross-checked with NVIDIA Sionna RT. Towers are either FCC-registered or located from the carriers' own strongest claims. Other areas are not yet modelled.</p></div>
+      <div><h3>What it does not show</h3><p>Speed tests are opt-in and cluster along roads, so a lack of tests is a verification gap, not proof of no service. Physics flags are predictions to check in the field, not findings of misconduct.</p></div>
+    </div>
+  </section>
+
+  <footer>
+    Sources: FCC National Broadband Map (public domain) · Speedtest® by Ookla® Global Fixed and Mobile Network Performance Maps (CC BY-NC-SA 4.0) · NCES EDGE school locations 2024-25 and School Neighborhood Poverty estimates · US Census cartographic boundaries 2023 · Copernicus GLO-30 DEM. Non-commercial research use. Methods and every number: <a href="https://github.com/adhabnr-ux/coverage-truth">coverage-truth</a> · planning experiments: <a href="https://github.com/adhabnr-ux/safe-planner">safe-planner</a>.
+  </footer>
+</div>

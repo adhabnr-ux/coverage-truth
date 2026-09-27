@@ -6,6 +6,10 @@ across Arizona with 184,512 real speed tests and with terrain physics, focusing 
 Built by Sahi (NVIDIA 6G Developer Program member) with Claude as co-builder, September 2026.
 Physics: NVIDIA Sionna RT plus an ITU-R P.526 terrain-diffraction model on Copernicus 30 m terrain.
 
+**Live tool: [adhabnr-ux.github.io/coverage-truth](https://adhabnr-ux.github.io/coverage-truth/)**. Look up any Arizona
+public school to see its FCC 4G claim, how many speed tests have checked it, and, around Black Mesa and Whiteriver,
+what terrain physics says. Built by `python -m ct.site` into `docs/index.html`.
+
 ![Statewide map](figures/statewide_map.png)
 
 ## Findings
@@ -102,6 +106,7 @@ python -m pytest -q tests          # 10 tests
 | `ct/physics_check.py` | site inference, terrain path loss, plausibility verdicts, sensitivity |
 | `ct/terrain_model.py`, `ct/terrain_scene.py`, `ct/pathsim.py` | propagation model, DEM mosaic + Sionna scene, Sionna path solver |
 | `tools/fcc_inpage_extract.js`, `ct/inpage.py` | browser-side FCC extractor + decoder |
+| `ct/site.py`, `site/` | builds the public school lookup page (`docs/index.html`, GitHub Pages) |
 | `results/` | every number quoted above |
 | `figures/` | all figures |
 
