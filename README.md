@@ -40,8 +40,8 @@ what terrain physics says. Built by `python -m ct.site` into `docs/index.html`.
 
    Claims are mostly physically possible. The main exception is AT&T's coverage around **Black Mesa
    Community School**, a school with **zero** speed tests within 2 km. For that claim to be true, AT&T
-   needs a tower near the school whose strongest claimed signal is only −90 dBm, and none shows up
-   in any public source. That is a specific, checkable prediction (look for the tower, or run a single drive
+   needs a tower near the school whose strongest claimed signal is only −90 dBm, and none appears in
+   the FCC cellular-site records we used. That is a specific, checkable prediction (look for the tower, or run a single drive
    test), which is exactly what this tool is for.
 
 Full tables: [`results/physics_table.md`](results/physics_table.md), [`results/summary.json`](results/summary.json).
@@ -67,11 +67,26 @@ Details, assumptions and limits: [`docs/METHODS.md`](docs/METHODS.md).
 
 **Cross-check against NVIDIA Sionna RT** (same DEM, 60 receivers around a registered Whiteriver tower):
 for line-of-sight links, Sionna and the terrain model agree to **0.01 dB in 24 of 30** cases (the other 6
-are grazing links where the knife-edge model adds up to 5 dB of Fresnel-zone loss). For obstructed links,
-Sionna RT's single-order diffraction finds **no path 60%** of the time, which is why the terrain-profile
-method is used at scale. This limitation is itself the starting point for Project #2.
+are grazing links where the knife-edge model adds up to 5 dB of Fresnel-zone loss).
+
+**Terrain-shadowed links are where Sionna RT struggles, and we measured how much.** For the 30 shadowed receivers
+([`ct/diffraction_ablation.py`](ct/diffraction_ablation.py), [`results/diffraction_ablation.csv`](results/diffraction_ablation.csv)):
+
+- Whether Sionna finds a path at all depends on ray count: 12/30 at 10⁶ rays, 23/30 at 10⁷, 26/30 at 10⁸.
+  Raising `max_depth` from 1 to 3 finds no new receivers (one gain moves 1.5 dB), `edge_diffraction` changes nothing, and disabling `diffraction_lit_region` removes every path.
+- The paths it finds are converged (median change 0.75 dB from 3·10⁷ to 10⁸ rays) but **~44 dB weaker than NTIA
+  Longley-Rice** (median; range 11–80 dB) and ~62 dB weaker than the knife-edge model. ITM itself sits a median
+  19 dB below the deliberately optimistic knife-edge model.
+- This matches the Sionna maintainers' statement that RT supports only first-order diffraction, and that shadowed
+  terrain would need higher-order / creeping diffraction ([NVlabs/sionna#1018](https://github.com/NVlabs/sionna/discussions/1018)).
+  That is why terrain-profile models are used at scale here.
+
+![Sionna RT on terrain-shadowed links](figures/sionna_terrain_diffraction.png)
 
 ## Honest corrections (kept on purpose)
+
+- An earlier version said Sionna RT "finds no path 60% of the time" for shadowed receivers. That was measured at
+  10⁶ rays; at 10⁸ rays it finds paths for 26 of 30, which are far too weak instead (see above).
 
 - An early version of the terrain loader read a DEM window that ran past a tile edge. rasterio silently clipped it,
   so the terrain was misregistered by about 9 km. That produced a false "31 implausible hexagons" at Whiteriver
@@ -92,8 +107,10 @@ python -c "from ct.fcc_dbf import read_dbf; read_dbf('data/bdc_04_4GLTE_mobile_b
 python -m ct.statewide             # claims vs. Ookla vs. schools
 python -m ct.run_physics           # physics check, all areas/carriers/scenarios (~25 min on 2 CPU cores)
 python -m ct.crosscheck_sionna     # Sionna RT cross-check
+python -m ct.diffraction_ablation && python -m ct.diffraction_ablation convergence && python -m ct.itm_reference
+python -m ct.diffraction_figure
 python -m ct.figures && python -m ct.report
-python -m pytest -q tests          # 10 tests
+python -m pytest -q tests          # 11 tests
 ```
 
 ## Repository map
@@ -105,6 +122,7 @@ python -m pytest -q tests          # 10 tests
 | `ct/statewide.py` | claims vs. Ookla tiles vs. schools, tribal-land join |
 | `ct/physics_check.py` | site inference, terrain path loss, plausibility verdicts, sensitivity |
 | `ct/terrain_model.py`, `ct/terrain_scene.py`, `ct/pathsim.py` | propagation model, DEM mosaic + Sionna scene, Sionna path solver |
+| `ct/diffraction_ablation.py`, `ct/itm_reference.py`, `ct/diffraction_figure.py` | Sionna RT settings/ray-count study on shadowed links, NTIA ITM reference |
 | `tools/fcc_inpage_extract.js`, `ct/inpage.py` | browser-side FCC extractor + decoder |
 | `ct/site.py`, `site/` | builds the public school lookup page (`docs/index.html`, GitHub Pages) |
 | `results/` | every number quoted above |

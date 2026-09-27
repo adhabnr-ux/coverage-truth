@@ -24,7 +24,8 @@ def elev_lookup(grid, lat, lon):
 
 
 def path_gain(scene_dir: Path, towers, rx_lat, rx_lon, rx_height=1.5, freq_hz=850e6, max_depth=2,
-              diffraction=True, samples=1_000_000, batch=4000):
+              diffraction=True, samples=1_000_000, batch=4000,
+              edge_diffraction=False, diffraction_lit_region=True, seed=42):
     """Returns path gain in dB [num_tx, num_rx] (sum of path powers), and runtime."""
     grid = dict(np.load(scene_dir / "grid.npz"))
     lat0, lon0 = float(grid["lat0"]), float(grid["lon0"])
@@ -46,7 +47,9 @@ def path_gain(scene_dir: Path, towers, rx_lat, rx_lon, rx_height=1.5, freq_hz=85
             for i in idx:
                 scene.add(rt.Receiver(name=f"rx{i}", position=[float(rx_x[i]), float(rx_y[i]), float(rx_z[i])]))
             paths = rt.PathSolver()(scene, max_depth=max_depth, los=True, specular_reflection=True,
-                                    diffraction=diffraction, refraction=False, samples_per_src=samples,
+                                    diffraction=diffraction, edge_diffraction=edge_diffraction,
+                                    diffraction_lit_region=diffraction_lit_region, seed=seed,
+                                    refraction=False, samples_per_src=samples,
                                     synthetic_array=True)
             a_re, a_im = paths.a
             a = np.asarray(a_re.numpy()) + 1j * np.asarray(a_im.numpy())   # [rx, rx_ant, tx, tx_ant, paths]

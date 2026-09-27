@@ -1,0 +1,50 @@
+{
+  "d1_diff": {
+    "found": 12,
+    "of": 30,
+    "seconds": 4.2,
+    "median_model_minus_sionna_db": 68.38
+  },
+  "d2_diff": {
+    "found": 12,
+    "of": 30,
+    "seconds": 4.1,
+    "median_model_minus_sionna_db": 68.38
+  },
+  "d3_diff": {
+    "found": 12,
+    "of": 30,
+    "seconds": 4.2,
+    "median_model_minus_sionna_db": 68.38
+  },
+  "d3_diff_edge": {
+    "found": 12,
+    "of": 30,
+    "seconds": 4.2,
+    "median_model_minus_sionna_db": 68.38
+  },
+  "d3_diff_nolit": {
+    "found": 0,
+    "of": 30,
+    "seconds": 4.4,
+    "median_model_minus_sionna_db": null
+  },
+  "d1_diff_1e7": {
+    "found": 23,
+    "of": 30,
+    "seconds": 22.6,
+    "median_model_minus_sionna_db": 65.75
+  },
+  "d1_diff_seed7": {
+    "found": 11,
+    "of": 30,
+    "seconds": 2.3,
+    "median_model_minus_sionna_db": 73.18
+  },
+  "d3_nodiff": {
+    "found": 0,
+    "of": 30,
+    "seconds": 3.7,
+    "median_model_minus_sionna_db": null
+  }
+}

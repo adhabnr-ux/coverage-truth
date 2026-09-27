@@ -125,3 +125,24 @@ def test_statewide_robust_contradictions_are_rare():
     t = pd.read_parquet(p)
     r = t[t.robust & (t.claim_frac == 1)]
     assert 0 < r.contradiction.mean() < 0.01
+
+
+def test_sionna_diffraction_numbers_match_readme():
+    """README/forum numbers for the Sionna terrain-diffraction study come straight from the result files."""
+    import json
+    import numpy as np
+    import pandas as pd
+    root = Path(__file__).resolve().parent.parent / "results"
+    if not (root / "diffraction_convergence.json").exists():
+        pytest.skip("run ct.diffraction_ablation first")
+    d = pd.read_csv(root / "diffraction_ablation.csv")
+    c = json.load(open(root / "diffraction_convergence.json"))
+    assert int((d.d1_diff > -299).sum()) == 12 and int((d.d1_diff_1e7 > -299).sum()) == 23
+    assert c["100000000"]["found"] == 26
+    assert ((d.d1_diff > -299) == (d.d3_diff > -299)).all() and (d.d1_diff - d.d3_diff).abs().max() < 2
+    assert (d.d3_diff == d.d3_diff_edge).all()
+    assert (d.d3_diff_nolit <= -299).all()
+    g = np.array(c["100000000"]["gains"]); f = g > -299
+    assert round(float(np.median((d.itm_db - g)[f]))) == 44
+    assert round(float(np.median((d.model_db - g)[f]))) == 62
+    assert round(float(np.median(d.itm_db - d.model_db))) == -19

@@ -49,7 +49,9 @@ unit-tested against the `h3` library).
 **Why a terrain-profile model and not only Sionna RT?** Sionna RT (v2.1) handles line-of-sight links and reflections
 exactly, but uses single-order edge diffraction on a mesh. Over rugged terrain, most receivers are shadowed by
 several ridges. Our cross-check (`ct/crosscheck_sionna.py`, `results/summary.json → sionna_crosscheck`)
-shows exact agreement on line-of-sight links and no Sionna path for 60% of shadowed receivers.
+shows exact agreement on line-of-sight links. On the 30 shadowed receivers (`ct/diffraction_ablation.py`), Sionna
+finds a path for 12 at 10⁶ rays and 26 at 10⁸, but those paths are a median 44 dB weaker than NTIA ITM
+(`ct/itm_reference.py`), consistent with first-order diffraction only (NVlabs/sionna discussion #1018).
 
 ## 4. Known limits
 
