@@ -108,7 +108,7 @@
     const any = s.physics.carriers.some(c => c.implausible > 0);
     return `<div class="phys"><h4>Physics check, claims within 2 km</h4>
       <table><thead><tr><th>Carrier</th><th>Claimed hexagons</th><th>Weak-signal claims vs. terrain</th></tr></thead><tbody>${rows}</tbody></table>
-      <p>${any ? "At least one carrier claims coverage here that our terrain model can reach only if a tower exists that appears in no public registry. That is a specific thing to verify on the ground." : "The carriers' claims near this school are physically consistent with the towers we can locate."}</p></div>`;
+      <p>${any ? "At least one carrier claims coverage here that our terrain model can reach only if that carrier has a tower nearby that is not in the FCC cellular-site records we used. That is a specific thing to verify on the ground." : "The carriers' claims near this school are physically consistent with the towers we can locate."}</p></div>`;
   }
   function select(id) {
     const s = S[id];
