@@ -110,6 +110,15 @@
       <table><thead><tr><th>Carrier</th><th>Claimed hexagons</th><th>Weak-signal claims vs. terrain</th></tr></thead><tbody>${rows}</tbody></table>
       <p>${any ? "At least one carrier claims coverage here that our terrain model can reach only if that carrier has a tower nearby that is not in the FCC cellular-site records we used. That is a specific thing to verify on the ground." : "The carriers' claims near this school are physically consistent with the towers we can locate."}</p></div>`;
   }
+  function twin(s) {
+    if (!s.twin) return "";
+    const cell = m => m ? `<span class="${m.meets ? "" : "flag"}">${m.dl} / ${m.ul}</span>` : "–";
+    const rows = s.twin.carriers.map(c => `<tr><td>${esc(c.carrier)}</td><td>${cell(c.models.rt)}</td><td>${cell(c.models.itm_rma)}</td><td>${cell(c.models.rma)}</td></tr>`).join("");
+    const fails = s.twin.carriers.filter(c => Object.values(c.models).every(m => !m.meets)).map(c => c.carrier);
+    return `<div class="phys"><h4>Full-stack NVIDIA Sionna simulation (Mesa Twin)</h4>
+      <table><thead><tr><th>Carrier</th><th>Ray tracing</th><th>Terrain + 3GPP</th><th>3GPP only</th></tr></thead><tbody>${rows}</tbody></table>
+      <p>Predicted download / upload Mbps outdoors at the FCC's 50% cell loading, from ray tracing, 5G link adaptation and a whole-network simulation. Red: below 5 / 1 Mbps. ${fails.length ? `${esc(fails.join(" and "))} falls short under every model, given the towers we can locate.` : "Every carrier's claim here holds under at least one model."} <a href="https://github.com/adhabnr-ux/mesa-twin">How</a></p></div>`;
+  }
   function select(id) {
     const s = S[id];
     const c = dots.get(id);
@@ -126,7 +135,7 @@
         <dt>Speed tests within 2 km</dt><dd class="num">${s.tests == null ? 0 : fmt(s.tests)}${s.dl != null ? ` · avg ${s.dl} Mbps down` : ""}</dd>
         <dt>Nearest registered 850 MHz site</dt><dd class="num">${s.towerkm} km</dd>
         <dt>Neighbourhood income</dt><dd>${s.ipr == null ? "n/a" : `<span class="num">${s.ipr}%</span> of the poverty line`}</dd>
-      </dl>${physics(s)}`;
+      </dl>${physics(s)}${twin(s)}`;
   }
 
   // ---- search

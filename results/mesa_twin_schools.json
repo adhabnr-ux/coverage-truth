@@ -1,0 +1,672 @@
+{
+ "40002301352": {
+  "carriers": [
+   {
+    "carrier": "AT&T",
+    "claim_dbm": -80.0,
+    "models": {
+     "rt": {
+      "dl": 34.3,
+      "ul": 11.0,
+      "meets": true
+     },
+     "rma": {
+      "dl": 34.1,
+      "ul": 8.4,
+      "meets": true
+     },
+     "itm_rma": {
+      "dl": 34.3,
+      "ul": 10.8,
+      "meets": true
+     }
+    }
+   },
+   {
+    "carrier": "Verizon",
+    "claim_dbm": -70.0,
+    "models": {
+     "rt": {
+      "dl": 34.5,
+      "ul": 14.2,
+      "meets": true
+     },
+     "rma": {
+      "dl": 34.5,
+      "ul": 13.7,
+      "meets": true
+     },
+     "itm_rma": {
+      "dl": 34.4,
+      "ul": 11.4,
+      "meets": true
+     }
+    }
+   },
+   {
+    "carrier": "Smith Bagley (Cellular One)",
+    "claim_dbm": -60.0,
+    "models": {
+     "rt": {
+      "dl": 25.5,
+      "ul": 7.6,
+      "meets": true
+     },
+     "rma": {
+      "dl": 34.4,
+      "ul": 10.0,
+      "meets": true
+     },
+     "itm_rma": {
+      "dl": 34.4,
+      "ul": 9.9,
+      "meets": true
+     }
+    }
+   }
+  ]
+ },
+ "40002301355": {
+  "carriers": [
+   {
+    "carrier": "AT&T",
+    "claim_dbm": -80.0,
+    "models": {
+     "rt": {
+      "dl": 34.3,
+      "ul": 11.0,
+      "meets": true
+     },
+     "rma": {
+      "dl": 34.1,
+      "ul": 8.4,
+      "meets": true
+     },
+     "itm_rma": {
+      "dl": 34.3,
+      "ul": 10.8,
+      "meets": true
+     }
+    }
+   },
+   {
+    "carrier": "Verizon",
+    "claim_dbm": -70.0,
+    "models": {
+     "rt": {
+      "dl": 34.5,
+      "ul": 14.2,
+      "meets": true
+     },
+     "rma": {
+      "dl": 34.5,
+      "ul": 13.7,
+      "meets": true
+     },
+     "itm_rma": {
+      "dl": 34.4,
+      "ul": 11.4,
+      "meets": true
+     }
+    }
+   },
+   {
+    "carrier": "Smith Bagley (Cellular One)",
+    "claim_dbm": -60.0,
+    "models": {
+     "rt": {
+      "dl": 25.5,
+      "ul": 7.6,
+      "meets": true
+     },
+     "rma": {
+      "dl": 34.4,
+      "ul": 10.0,
+      "meets": true
+     },
+     "itm_rma": {
+      "dl": 34.4,
+      "ul": 9.9,
+      "meets": true
+     }
+    }
+   }
+  ]
+ },
+ "40002301524": {
+  "carriers": [
+   {
+    "carrier": "AT&T",
+    "claim_dbm": -80.0,
+    "models": {
+     "rt": {
+      "dl": 34.3,
+      "ul": 11.0,
+      "meets": true
+     },
+     "rma": {
+      "dl": 34.1,
+      "ul": 8.4,
+      "meets": true
+     },
+     "itm_rma": {
+      "dl": 34.3,
+      "ul": 10.8,
+      "meets": true
+     }
+    }
+   },
+   {
+    "carrier": "Verizon",
+    "claim_dbm": -70.0,
+    "models": {
+     "rt": {
+      "dl": 34.5,
+      "ul": 14.2,
+      "meets": true
+     },
+     "rma": {
+      "dl": 34.5,
+      "ul": 13.7,
+      "meets": true
+     },
+     "itm_rma": {
+      "dl": 34.4,
+      "ul": 11.4,
+      "meets": true
+     }
+    }
+   },
+   {
+    "carrier": "Smith Bagley (Cellular One)",
+    "claim_dbm": -60.0,
+    "models": {
+     "rt": {
+      "dl": 25.5,
+      "ul": 7.6,
+      "meets": true
+     },
+     "rma": {
+      "dl": 34.4,
+      "ul": 10.0,
+      "meets": true
+     },
+     "itm_rma": {
+      "dl": 34.4,
+      "ul": 9.9,
+      "meets": true
+     }
+    }
+   }
+  ]
+ },
+ "40002303703": {
+  "carriers": [
+   {
+    "carrier": "AT&T",
+    "claim_dbm": -80.0,
+    "models": {
+     "rt": {
+      "dl": 34.3,
+      "ul": 11.0,
+      "meets": true
+     },
+     "rma": {
+      "dl": 34.1,
+      "ul": 8.4,
+      "meets": true
+     },
+     "itm_rma": {
+      "dl": 34.3,
+      "ul": 10.8,
+      "meets": true
+     }
+    }
+   },
+   {
+    "carrier": "Verizon",
+    "claim_dbm": -70.0,
+    "models": {
+     "rt": {
+      "dl": 34.5,
+      "ul": 14.2,
+      "meets": true
+     },
+     "rma": {
+      "dl": 34.5,
+      "ul": 13.7,
+      "meets": true
+     },
+     "itm_rma": {
+      "dl": 34.4,
+      "ul": 11.4,
+      "meets": true
+     }
+    }
+   },
+   {
+    "carrier": "Smith Bagley (Cellular One)",
+    "claim_dbm": -60.0,
+    "models": {
+     "rt": {
+      "dl": 25.5,
+      "ul": 7.6,
+      "meets": true
+     },
+     "rma": {
+      "dl": 34.4,
+      "ul": 10.0,
+      "meets": true
+     },
+     "itm_rma": {
+      "dl": 34.4,
+      "ul": 9.9,
+      "meets": true
+     }
+    }
+   }
+  ]
+ },
+ "40061203128": {
+  "carriers": [
+   {
+    "carrier": "AT&T",
+    "claim_dbm": -100.0,
+    "models": {
+     "rt": {
+      "dl": 34.6,
+      "ul": 13.1,
+      "meets": true
+     },
+     "rma": {
+      "dl": 29.4,
+      "ul": 5.0,
+      "meets": true
+     },
+     "itm_rma": {
+      "dl": 34.6,
+      "ul": 10.0,
+      "meets": true
+     }
+    }
+   },
+   {
+    "carrier": "Verizon",
+    "claim_dbm": -60.0,
+    "models": {
+     "rt": {
+      "dl": 34.7,
+      "ul": 14.0,
+      "meets": true
+     },
+     "rma": {
+      "dl": 34.7,
+      "ul": 8.9,
+      "meets": true
+     },
+     "itm_rma": {
+      "dl": 34.4,
+      "ul": 11.0,
+      "meets": true
+     }
+    }
+   },
+   {
+    "carrier": "Smith Bagley (Cellular One)",
+    "claim_dbm": -50.0,
+    "models": {
+     "rt": {
+      "dl": 33.8,
+      "ul": 9.6,
+      "meets": true
+     },
+     "rma": {
+      "dl": 34.7,
+      "ul": 13.1,
+      "meets": true
+     },
+     "itm_rma": {
+      "dl": 35.2,
+      "ul": 11.0,
+      "meets": true
+     }
+    }
+   }
+  ]
+ },
+ "590003200010": {
+  "carriers": [
+   {
+    "carrier": "AT&T",
+    "claim_dbm": -80.0,
+    "models": {
+     "rt": {
+      "dl": 34.4,
+      "ul": 9.9,
+      "meets": true
+     },
+     "rma": {
+      "dl": 34.2,
+      "ul": 10.2,
+      "meets": true
+     },
+     "itm_rma": {
+      "dl": 34.4,
+      "ul": 13.2,
+      "meets": true
+     }
+    }
+   },
+   {
+    "carrier": "Verizon",
+    "claim_dbm": -70.0,
+    "models": {
+     "rt": {
+      "dl": 35.1,
+      "ul": 11.5,
+      "meets": true
+     },
+     "rma": {
+      "dl": 27.6,
+      "ul": 8.8,
+      "meets": true
+     },
+     "itm_rma": {
+      "dl": 35.1,
+      "ul": 9.9,
+      "meets": true
+     }
+    }
+   },
+   {
+    "carrier": "Smith Bagley (Cellular One)",
+    "claim_dbm": -70.0,
+    "models": {
+     "rt": {
+      "dl": 34.6,
+      "ul": 14.4,
+      "meets": true
+     },
+     "rma": {
+      "dl": 34.6,
+      "ul": 9.5,
+      "meets": true
+     },
+     "itm_rma": {
+      "dl": 34.6,
+      "ul": 12.1,
+      "meets": true
+     }
+    }
+   }
+  ]
+ },
+ "590005200175": {
+  "carriers": [
+   {
+    "carrier": "AT&T",
+    "claim_dbm": -80.0,
+    "models": {
+     "rt": {
+      "dl": 0.0,
+      "ul": 0.0,
+      "meets": false
+     },
+     "rma": {
+      "dl": 35.4,
+      "ul": 10.3,
+      "meets": true
+     },
+     "itm_rma": {
+      "dl": 34.8,
+      "ul": 8.6,
+      "meets": true
+     }
+    }
+   },
+   {
+    "carrier": "Verizon",
+    "claim_dbm": -60.0,
+    "models": {
+     "rt": {
+      "dl": 34.8,
+      "ul": 14.3,
+      "meets": true
+     },
+     "rma": {
+      "dl": 34.8,
+      "ul": 9.7,
+      "meets": true
+     },
+     "itm_rma": {
+      "dl": 34.8,
+      "ul": 13.5,
+      "meets": true
+     }
+    }
+   },
+   {
+    "carrier": "Smith Bagley (Cellular One)",
+    "claim_dbm": -70.0,
+    "models": {
+     "rt": {
+      "dl": 35.6,
+      "ul": 12.7,
+      "meets": true
+     },
+     "rma": {
+      "dl": 27.1,
+      "ul": 5.1,
+      "meets": true
+     },
+     "itm_rma": {
+      "dl": 35.6,
+      "ul": 9.8,
+      "meets": true
+     }
+    }
+   }
+  ]
+ },
+ "590008800015": {
+  "carriers": [
+   {
+    "carrier": "AT&T",
+    "claim_dbm": -80.0,
+    "models": {
+     "rt": {
+      "dl": 34.9,
+      "ul": 16.9,
+      "meets": true
+     },
+     "rma": {
+      "dl": 34.9,
+      "ul": 11.7,
+      "meets": true
+     },
+     "itm_rma": {
+      "dl": 34.9,
+      "ul": 14.4,
+      "meets": true
+     }
+    }
+   },
+   {
+    "carrier": "Verizon",
+    "claim_dbm": -60.0,
+    "models": {
+     "rt": {
+      "dl": 34.9,
+      "ul": 10.7,
+      "meets": true
+     },
+     "rma": {
+      "dl": 35.3,
+      "ul": 7.7,
+      "meets": true
+     },
+     "itm_rma": {
+      "dl": 22.2,
+      "ul": 10.8,
+      "meets": true
+     }
+    }
+   },
+   {
+    "carrier": "Smith Bagley (Cellular One)",
+    "claim_dbm": -98.0,
+    "models": {
+     "rt": {
+      "dl": 14.1,
+      "ul": 9.8,
+      "meets": true
+     },
+     "rma": {
+      "dl": 11.1,
+      "ul": 7.5,
+      "meets": true
+     },
+     "itm_rma": {
+      "dl": 16.4,
+      "ul": 12.4,
+      "meets": true
+     }
+    }
+   }
+  ]
+ },
+ "590010200008": {
+  "carriers": [
+   {
+    "carrier": "AT&T",
+    "claim_dbm": -110.0,
+    "models": {
+     "rt": {
+      "dl": 0.0,
+      "ul": 0.0,
+      "meets": false
+     },
+     "rma": {
+      "dl": 0.0,
+      "ul": 0.0,
+      "meets": false
+     },
+     "itm_rma": {
+      "dl": 6.4,
+      "ul": 0.0,
+      "meets": false
+     }
+    }
+   },
+   {
+    "carrier": "Verizon",
+    "claim_dbm": -90.0,
+    "models": {
+     "rt": {
+      "dl": 16.0,
+      "ul": 2.1,
+      "meets": true
+     },
+     "rma": {
+      "dl": 14.9,
+      "ul": 4.4,
+      "meets": true
+     },
+     "itm_rma": {
+      "dl": 10.1,
+      "ul": 11.8,
+      "meets": true
+     }
+    }
+   },
+   {
+    "carrier": "Smith Bagley (Cellular One)",
+    "claim_dbm": -104.0,
+    "models": {
+     "rt": {
+      "dl": 35.1,
+      "ul": 11.0,
+      "meets": true
+     },
+     "rma": {
+      "dl": 12.7,
+      "ul": 1.3,
+      "meets": true
+     },
+     "itm_rma": {
+      "dl": 35.1,
+      "ul": 10.9,
+      "meets": true
+     }
+    }
+   }
+  ]
+ },
+ "590017100017": {
+  "carriers": [
+   {
+    "carrier": "AT&T",
+    "claim_dbm": -80.0,
+    "models": {
+     "rt": {
+      "dl": 34.4,
+      "ul": 13.2,
+      "meets": true
+     },
+     "rma": {
+      "dl": 34.4,
+      "ul": 9.1,
+      "meets": true
+     },
+     "itm_rma": {
+      "dl": 34.4,
+      "ul": 12.8,
+      "meets": true
+     }
+    }
+   },
+   {
+    "carrier": "Verizon",
+    "claim_dbm": -70.0,
+    "models": {
+     "rt": {
+      "dl": 34.7,
+      "ul": 13.9,
+      "meets": true
+     },
+     "rma": {
+      "dl": 34.2,
+      "ul": 9.5,
+      "meets": true
+     },
+     "itm_rma": {
+      "dl": 34.7,
+      "ul": 12.3,
+      "meets": true
+     }
+    }
+   },
+   {
+    "carrier": "Smith Bagley (Cellular One)",
+    "claim_dbm": -60.0,
+    "models": {
+     "rt": {
+      "dl": 35.2,
+      "ul": 14.2,
+      "meets": true
+     },
+     "rma": {
+      "dl": 35.2,
+      "ul": 8.8,
+      "meets": true
+     },
+     "itm_rma": {
+      "dl": 35.2,
+      "ul": 12.6,
+      "meets": true
+     }
+    }
+   }
+  ]
+ }
+}

@@ -61,6 +61,8 @@ def build() -> dict:
     s = pd.read_csv(WORK / "schools_vs_claims.csv")
     s["status"] = s.apply(status, axis=1)
     phys = physics_near_schools(s)
+    twin_f = ROOT / "results" / "mesa_twin_schools.json"
+    twin = json.loads(twin_f.read_text()) if twin_f.exists() else {}
     rows = []
     for r in s.itertuples():
         rows.append([r.NAME.title() if r.NAME.isupper() else r.NAME, r.CITY.title(), r.NMCNTY.replace(" County", ""),
@@ -68,9 +70,9 @@ def build() -> dict:
                      None if pd.isna(r.tests2km) else int(r.tests2km), None if pd.isna(r.dl2km) else round(r.dl2km, 1),
                      None if pd.isna(r.IPR_EST) else int(r.IPR_EST), r.tribal_area if isinstance(r.tribal_area, str) else None,
                      None if pd.isna(r.claim_env) else int(r.claim_env), round(r.claim_frac_2km, 3), round(r.tower_km, 1),
-                     phys.get(int(r.NCESSCH))])
+                     phys.get(int(r.NCESSCH)), twin.get(str(int(r.NCESSCH)))])
     schools = dict(cols=["name", "city", "county", "lat", "lon", "status", "tests", "dl", "ipr", "tribal", "env",
-                         "claim2km", "towerkm", "physics"], rows=rows)
+                         "claim2km", "towerkm", "physics", "twin"], rows=rows)
     st = gpd.read_file(f"zip://{DATA / 'cb_state.zip'}")
     az = st[st.STUSPS == "AZ"].to_crs(4326)
     ai = gpd.clip(gpd.read_file(f"zip://{DATA / 'cb_aiannh.zip'}").to_crs(4326), az)
