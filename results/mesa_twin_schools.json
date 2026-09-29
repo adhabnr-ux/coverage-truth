@@ -7,7 +7,7 @@
     "models": {
      "rt": {
       "dl": 34.3,
-      "ul": 11.0,
+      "ul": 10.8,
       "meets": true
      },
      "rma": {
@@ -17,7 +17,7 @@
      },
      "itm_rma": {
       "dl": 34.3,
-      "ul": 10.8,
+      "ul": 11.4,
       "meets": true
      }
     }
@@ -28,17 +28,17 @@
     "models": {
      "rt": {
       "dl": 34.5,
-      "ul": 14.2,
+      "ul": 14.4,
       "meets": true
      },
      "rma": {
       "dl": 34.5,
-      "ul": 13.7,
+      "ul": 14.0,
       "meets": true
      },
      "itm_rma": {
-      "dl": 34.4,
-      "ul": 11.4,
+      "dl": 34.5,
+      "ul": 11.9,
       "meets": true
      }
     }
@@ -48,18 +48,18 @@
     "claim_dbm": -60.0,
     "models": {
      "rt": {
-      "dl": 25.5,
-      "ul": 7.6,
+      "dl": 29.7,
+      "ul": 8.9,
       "meets": true
      },
      "rma": {
       "dl": 34.4,
-      "ul": 10.0,
+      "ul": 10.7,
       "meets": true
      },
      "itm_rma": {
       "dl": 34.4,
-      "ul": 9.9,
+      "ul": 11.5,
       "meets": true
      }
     }
@@ -74,7 +74,7 @@
     "models": {
      "rt": {
       "dl": 34.3,
-      "ul": 11.0,
+      "ul": 10.8,
       "meets": true
      },
      "rma": {
@@ -84,7 +84,7 @@
      },
      "itm_rma": {
       "dl": 34.3,
-      "ul": 10.8,
+      "ul": 11.4,
       "meets": true
      }
     }
@@ -95,17 +95,17 @@
     "models": {
      "rt": {
       "dl": 34.5,
-      "ul": 14.2,
+      "ul": 14.4,
       "meets": true
      },
      "rma": {
       "dl": 34.5,
-      "ul": 13.7,
+      "ul": 14.0,
       "meets": true
      },
      "itm_rma": {
-      "dl": 34.4,
-      "ul": 11.4,
+      "dl": 34.5,
+      "ul": 11.9,
       "meets": true
      }
     }
@@ -115,18 +115,18 @@
     "claim_dbm": -60.0,
     "models": {
      "rt": {
-      "dl": 25.5,
-      "ul": 7.6,
+      "dl": 29.7,
+      "ul": 8.9,
       "meets": true
      },
      "rma": {
       "dl": 34.4,
-      "ul": 10.0,
+      "ul": 10.7,
       "meets": true
      },
      "itm_rma": {
       "dl": 34.4,
-      "ul": 9.9,
+      "ul": 11.5,
       "meets": true
      }
     }
@@ -141,7 +141,7 @@
     "models": {
      "rt": {
       "dl": 34.3,
-      "ul": 11.0,
+      "ul": 10.8,
       "meets": true
      },
      "rma": {
@@ -151,7 +151,7 @@
      },
      "itm_rma": {
       "dl": 34.3,
-      "ul": 10.8,
+      "ul": 11.4,
       "meets": true
      }
     }
@@ -162,17 +162,17 @@
     "models": {
      "rt": {
       "dl": 34.5,
-      "ul": 14.2,
+      "ul": 14.4,
       "meets": true
      },
      "rma": {
       "dl": 34.5,
-      "ul": 13.7,
+      "ul": 14.0,
       "meets": true
      },
      "itm_rma": {
-      "dl": 34.4,
-      "ul": 11.4,
+      "dl": 34.5,
+      "ul": 11.9,
       "meets": true
      }
     }
@@ -182,18 +182,18 @@
     "claim_dbm": -60.0,
     "models": {
      "rt": {
-      "dl": 25.5,
-      "ul": 7.6,
+      "dl": 29.7,
+      "ul": 8.9,
       "meets": true
      },
      "rma": {
       "dl": 34.4,
-      "ul": 10.0,
+      "ul": 10.7,
       "meets": true
      },
      "itm_rma": {
       "dl": 34.4,
-      "ul": 9.9,
+      "ul": 11.5,
       "meets": true
      }
     }
@@ -208,7 +208,7 @@
     "models": {
      "rt": {
       "dl": 34.3,
-      "ul": 11.0,
+      "ul": 10.8,
       "meets": true
      },
      "rma": {
@@ -218,7 +218,7 @@
      },
      "itm_rma": {
       "dl": 34.3,
-      "ul": 10.8,
+      "ul": 11.4,
       "meets": true
      }
     }
@@ -229,17 +229,17 @@
     "models": {
      "rt": {
       "dl": 34.5,
-      "ul": 14.2,
+      "ul": 14.4,
       "meets": true
      },
      "rma": {
       "dl": 34.5,
-      "ul": 13.7,
+      "ul": 14.0,
       "meets": true
      },
      "itm_rma": {
-      "dl": 34.4,
-      "ul": 11.4,
+      "dl": 34.5,
+      "ul": 11.9,
       "meets": true
      }
     }
@@ -249,18 +249,18 @@
     "claim_dbm": -60.0,
     "models": {
      "rt": {
-      "dl": 25.5,
-      "ul": 7.6,
+      "dl": 29.7,
+      "ul": 8.9,
       "meets": true
      },
      "rma": {
       "dl": 34.4,
-      "ul": 10.0,
+      "ul": 10.7,
       "meets": true
      },
      "itm_rma": {
       "dl": 34.4,
-      "ul": 9.9,
+      "ul": 11.5,
       "meets": true
      }
     }
@@ -275,17 +275,17 @@
     "models": {
      "rt": {
       "dl": 34.6,
-      "ul": 13.1,
+      "ul": 13.2,
       "meets": true
      },
      "rma": {
-      "dl": 29.4,
+      "dl": 29.9,
       "ul": 5.0,
       "meets": true
      },
      "itm_rma": {
       "dl": 34.6,
-      "ul": 10.0,
+      "ul": 10.2,
       "meets": true
      }
     }
@@ -296,16 +296,16 @@
     "models": {
      "rt": {
       "dl": 34.7,
-      "ul": 14.0,
+      "ul": 14.1,
       "meets": true
      },
      "rma": {
       "dl": 34.7,
-      "ul": 8.9,
+      "ul": 9.2,
       "meets": true
      },
      "itm_rma": {
-      "dl": 34.4,
+      "dl": 34.7,
       "ul": 11.0,
       "meets": true
      }
@@ -316,18 +316,18 @@
     "claim_dbm": -50.0,
     "models": {
      "rt": {
-      "dl": 33.8,
-      "ul": 9.6,
+      "dl": 35.2,
+      "ul": 11.6,
       "meets": true
      },
      "rma": {
       "dl": 34.7,
-      "ul": 13.1,
+      "ul": 13.2,
       "meets": true
      },
      "itm_rma": {
       "dl": 35.2,
-      "ul": 11.0,
+      "ul": 12.3,
       "meets": true
      }
     }
@@ -342,7 +342,7 @@
     "models": {
      "rt": {
       "dl": 34.4,
-      "ul": 9.9,
+      "ul": 10.8,
       "meets": true
      },
      "rma": {
@@ -363,17 +363,17 @@
     "models": {
      "rt": {
       "dl": 35.1,
-      "ul": 11.5,
+      "ul": 11.9,
       "meets": true
      },
      "rma": {
-      "dl": 27.6,
+      "dl": 28.7,
       "ul": 8.8,
       "meets": true
      },
      "itm_rma": {
       "dl": 35.1,
-      "ul": 9.9,
+      "ul": 10.0,
       "meets": true
      }
     }
@@ -394,7 +394,7 @@
      },
      "itm_rma": {
       "dl": 34.6,
-      "ul": 12.1,
+      "ul": 12.6,
       "meets": true
      }
     }
@@ -430,7 +430,7 @@
     "models": {
      "rt": {
       "dl": 34.8,
-      "ul": 14.3,
+      "ul": 14.2,
       "meets": true
      },
      "rma": {
@@ -451,11 +451,11 @@
     "models": {
      "rt": {
       "dl": 35.6,
-      "ul": 12.7,
+      "ul": 12.9,
       "meets": true
      },
      "rma": {
-      "dl": 27.1,
+      "dl": 27.3,
       "ul": 5.1,
       "meets": true
      },
@@ -476,7 +476,7 @@
     "models": {
      "rt": {
       "dl": 34.9,
-      "ul": 16.9,
+      "ul": 15.8,
       "meets": true
      },
      "rma": {
@@ -486,7 +486,7 @@
      },
      "itm_rma": {
       "dl": 34.9,
-      "ul": 14.4,
+      "ul": 14.5,
       "meets": true
      }
     }
@@ -496,8 +496,8 @@
     "claim_dbm": -60.0,
     "models": {
      "rt": {
-      "dl": 34.9,
-      "ul": 10.7,
+      "dl": 35.3,
+      "ul": 12.3,
       "meets": true
      },
      "rma": {
@@ -506,8 +506,8 @@
       "meets": true
      },
      "itm_rma": {
-      "dl": 22.2,
-      "ul": 10.8,
+      "dl": 25.6,
+      "ul": 11.2,
       "meets": true
      }
     }
@@ -517,18 +517,18 @@
     "claim_dbm": -98.0,
     "models": {
      "rt": {
-      "dl": 14.1,
-      "ul": 9.8,
+      "dl": 17.4,
+      "ul": 11.1,
       "meets": true
      },
      "rma": {
-      "dl": 11.1,
-      "ul": 7.5,
+      "dl": 13.1,
+      "ul": 7.6,
       "meets": true
      },
      "itm_rma": {
-      "dl": 16.4,
-      "ul": 12.4,
+      "dl": 20.8,
+      "ul": 12.8,
       "meets": true
      }
     }
@@ -563,17 +563,17 @@
     "claim_dbm": -90.0,
     "models": {
      "rt": {
-      "dl": 16.0,
-      "ul": 2.1,
+      "dl": 19.8,
+      "ul": 2.7,
       "meets": true
      },
      "rma": {
-      "dl": 14.9,
+      "dl": 16.9,
       "ul": 4.4,
       "meets": true
      },
      "itm_rma": {
-      "dl": 10.1,
+      "dl": 13.0,
       "ul": 11.8,
       "meets": true
      }
@@ -585,17 +585,17 @@
     "models": {
      "rt": {
       "dl": 35.1,
-      "ul": 11.0,
+      "ul": 10.8,
       "meets": true
      },
      "rma": {
-      "dl": 12.7,
+      "dl": 13.8,
       "ul": 1.3,
       "meets": true
      },
      "itm_rma": {
       "dl": 35.1,
-      "ul": 10.9,
+      "ul": 10.7,
       "meets": true
      }
     }
@@ -610,12 +610,12 @@
     "models": {
      "rt": {
       "dl": 34.4,
-      "ul": 13.2,
+      "ul": 13.7,
       "meets": true
      },
      "rma": {
       "dl": 34.4,
-      "ul": 9.1,
+      "ul": 9.2,
       "meets": true
      },
      "itm_rma": {
@@ -631,17 +631,17 @@
     "models": {
      "rt": {
       "dl": 34.7,
-      "ul": 13.9,
+      "ul": 14.4,
       "meets": true
      },
      "rma": {
       "dl": 34.2,
-      "ul": 9.5,
+      "ul": 9.6,
       "meets": true
      },
      "itm_rma": {
       "dl": 34.7,
-      "ul": 12.3,
+      "ul": 12.9,
       "meets": true
      }
     }
@@ -652,12 +652,12 @@
     "models": {
      "rt": {
       "dl": 35.2,
-      "ul": 14.2,
+      "ul": 14.3,
       "meets": true
      },
      "rma": {
       "dl": 35.2,
-      "ul": 8.8,
+      "ul": 8.7,
       "meets": true
      },
      "itm_rma": {
