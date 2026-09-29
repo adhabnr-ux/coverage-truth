@@ -9,6 +9,8 @@ Physics: NVIDIA Sionna RT plus an ITU-R P.526 terrain-diffraction model on Coper
 **Live tool: [adhabnr-ux.github.io/coverage-truth](https://adhabnr-ux.github.io/coverage-truth/)**. Look up any Arizona
 public school to see its FCC 4G claim, how many speed tests have checked it, and, around Black Mesa and Whiteriver,
 what terrain physics says. Built by `python -m ct.site` into `docs/index.html`.
+For the seven school campuses around Black Mesa it also shows the full-stack NVIDIA Sionna simulation from
+[mesa-twin](https://github.com/adhabnr-ux/mesa-twin) (ray tracing → 5G link level → whole-network speeds).
 
 ![Statewide map](figures/statewide_map.png)
 
